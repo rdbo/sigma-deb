@@ -1,0 +1,12 @@
+[submodule "sigma-dwm"]
+	path = sigma-dwm
+	url = https://github.com/rdbo/sigma-dwm
+[submodule "sigma-dwmblocks-async"]
+	path = sigma-dwmblocks-async
+	url = https://github.com/rdbo/sigma-dwmblocks-async
+[submodule "sigma-st"]
+	path = sigma-st
+	url = https://github.com/rdbo/sigma-st
+[submodule "sigma-slock"]
+	path = sigma-slock
+	url = https://github.com/rdbo/sigma-slock
