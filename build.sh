@@ -23,7 +23,7 @@ fakeroot checkinstall \
     --pkggroup "checkinstall" \
     --pkgsource="sigma+linux-$VERSION" \
     --requires="libx11-dev, libxft-dev, libxinerama-dev, libxrandr-dev, libimlib2-dev, libharfbuzz-dev, libfreetype-dev, gcc" \
-    --recommends="xinit, dunst, libnotify-bin, feh, vim, firefox" \
+    --recommends="xinit, dunst, libnotify-bin, feh, vim, firefox-esr, man" \
     --provides="sigma-linux"
 
 mv *.deb "$ROOTDIR"/bin
