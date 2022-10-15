@@ -7,3 +7,4 @@ ln -s ../sigma-dmenu ./dmenu
 ln -s ../sigma-st ./st
 ln -s ../sigma-slock ./slock
 ln -s ../rootfs ./rootfs
+cd ..
