@@ -16,12 +16,13 @@ slock:
 	make -C slock
 
 install: all
-	mkdir -p /usr/share/backgrounds /usr/local/bin /usr/local/src
+	mkdir -p /usr/share/backgrounds /usr/local/bin /usr/local/src /usr/local/share/man/man1
 	make -C dwm install
 	make -C dwmblocks-async install
 	make -C dmenu install
 	make -C st install
 	make -C slock install
+	install -m 0644 sigma-linux.1 /usr/local/share/man/man1/
 	install -m 0755 dwmblocks-async/scripts/* /usr/local/bin/
 	cp -rf rootfs/. /
 	cp -rf . /usr/local/src/dev
