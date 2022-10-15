@@ -6,6 +6,7 @@
 ROOTDIR="$(pwd)"
 VERSION="1.0.0"
 
+rm -rf bin deb
 mkdir -p bin deb
 
 cp -Lr src deb/sigma+linux-$VERSION
