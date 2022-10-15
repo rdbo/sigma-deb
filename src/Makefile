@@ -16,20 +16,30 @@ slock:
 	make -C slock
 
 install: all
-	mkdir -p $(DESTDIR)/usr/share/backgrounds $(DESTDIR)/usr/bin
-	install -m 0755 dwm/dwm dwmblocks-async/dwmblocks dmenu/dmenu st/st slock/slock $(DESTDIR)/usr/bin/
-	install -m 0755 dwmblocks-async/scripts/* /usr/bin/
-	cp -rf rootfs/. $(DESTDIR)/
+	mkdir -p /usr/share/backgrounds /usr/local/bin /usr/local/src
+	make -C dwm install
+	make -C dwmblocks-async install
+	make -C dmenu install
+	make -C st install
+	make -C slock install
+	cp -rf rootfs/. /
+	cp -rf . /usr/local/src/dev
 
 clean:
 	make -C dwm clean
 	make -C dwmblocks-async clean
+	make -C dmenu clean
 	make -C st clean
 	make -C slock clean
 
 uninstall:
-	rm $(DESTDIR)/usr/bin/dwm $(DESTDIR)/usr/bin/dwmblocks $(DESTDIR)/usr/bin/st $(DESTDIR)/usr/bin/slock
-	rm $(DESTDIR)/usr/share/backgrounds/wallpaper* # be careful with this line
-	find rootfs -exec rm -rf $(DESTDIR)/{} \;
+	make -C dwm uninstall
+	make -C dwmblocks-async uninstall
+	make -C dmenu uninstall
+	make -C st uninstall
+	make -C slock uninstall
+	rm /usr/share/backgrounds/wallpaper* # be careful with this line
+	rm -rf /usr/local/src/dev
+	find rootfs -exec rm -rf /{} \;
 
 .PHONY: all dwm dwmblocks dmenu st slock install clean uninstall

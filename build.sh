@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# Buidl Dependencies:
-# checkinstall
+# Build Dependencies:
+# fakeroot checkinstall
 
 # CheckInstall Menu
 # This package will be built according to these values: 
