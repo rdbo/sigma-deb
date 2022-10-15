@@ -10,3 +10,6 @@
 [submodule "sigma-slock"]
 	path = sigma-slock
 	url = https://github.com/rdbo/sigma-slock
+[submodule "sigma-dmenu"]
+	path = sigma-dmenu
+	url = https://github.com/rdbo/sigma-dmenu
