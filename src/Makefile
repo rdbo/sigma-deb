@@ -22,6 +22,7 @@ install: all
 	make -C dmenu install
 	make -C st install
 	make -C slock install
+	install -m 0755 dwmblocks-async/scripts/* /usr/local/bin/
 	cp -rf rootfs/. /
 	cp -rf . /usr/local/src/dev
 
