@@ -17,7 +17,7 @@
 # 8 -  Source location: [ sigma+linux-1.0.0 ]
 # 9 -  Alternate source location: [  ]
 # 10 - Requires: [ libx11-dev, libxft-dev, libxinerama-dev, libxrandr-dev, libimlib2-dev, libharfbuzz-dev, libfreetype-dev, gcc ]
-# 11 - Recommends: [ xinit, dunst, notify-send, feh, net-tools, vim, firefox ]
+# 11 - Recommends: [ xinit, dunst, libnotify-bin, feh, net-tools, vim, firefox ]
 # 12 - Suggests: [  ]
 # 13 - Provides: [ sigma-linux ]
 # 14 - Conflicts: [  ]
