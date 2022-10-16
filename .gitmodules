@@ -13,3 +13,6 @@
 [submodule "sigma-dmenu"]
 	path = sigma-dmenu
 	url = https://github.com/rdbo/sigma-dmenu
+[submodule "sigma-svkbd"]
+	path = sigma-svkbd
+	url = https://github.com/rdbo/sigma-svkbd
