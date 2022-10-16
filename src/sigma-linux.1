@@ -8,6 +8,44 @@ sigma-linux
 .SH DESCRIPTION
 Sigma Linux configuration for Debian
 
+.SH GENERAL INFORMATION
+Sigma Linux (Debian) is a preconfigured version of Debian with focus on minimalism and quick workflow. It comes with many different utilities pre-installed, has a live system environment, and can be installed to a storage unit. It makes use of many different programs provided by suckless that have been patched and configured to have a better user experience.
+
+.IP
+.B SOURCE CODE
+.IP
+The source code can be acquired from the author's GitHub page (https://github.com/rdbo), or if you already have the ISO, it comes with the Debian package source code at /usr/local/src/dev.
+
+.IP
+.B SOFTWARE
+.IP
+Sigma Linux comes with many different programs:
+
+- dwm (dynamic window manager)
+
+- dwmblocks-async (asynchronous version of dwmblocks with click support)
+
+- dmenu (dynamic menu)
+
+- st (simple terminal)
+
+- slock (simple X screen locker)
+
+- Firefox (web browser)
+
+.IP
+.B STATUS BAR MODULES
+.IP
+Some status bar modules have some default values that might differ from your system's.
+
+- The network interfaces module (sbnwif) searches for a wired connection on eth0 and a wireless connection on wlan0, both without checking for IPv6;
+
+- The battery module only checks the battery BAT1 (check your batteries in /sys/class/power_supply);
+
+To change this values, you either rename the interfaces and battery to match the default value, or recompile dwmblocks-async with the custom values.
+
+To recompile dwmblocks-async with custom values, go to /usr/local/src/dev/dwmblocks-async, modify config.h and run 'make clean install' as root.
+
 .SH SHORTCUTS
 .IP
 .B TAB SHORTCUTS
@@ -48,6 +86,8 @@ Win + Enter -> Set selected window as master
 Win + Shift + K -> Raise window on stack
 
 Win + Shift + J -> Lower window on stack
+
+Win + Shift + Space -> Toggle floating
 
 Win + I -> Increase number of masters
 
