@@ -25,7 +25,7 @@ install: all
 	install -m 0644 sigma-linux.1 /usr/local/share/man/man1/
 	install -m 0755 dwmblocks-async/scripts/* /usr/local/bin/
 	cp -rf rootfs/. /
-	cp -rf . /usr/local/src/dev
+	cp -rf . /usr/local/src/deb
 
 clean:
 	make -C dwm clean
