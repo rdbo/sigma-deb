@@ -1,4 +1,9 @@
+#!/bin/sh
+
 mkdir -p "$HOME/Pictures"
 SCREENSHOT_PATH="$HOME/Pictures/$(date +%Y-%m-%d_%H-%M-%S).png"
-maim -s "$SCREENSHOT_PATH"
-notify-send "  Screenshot saved to: $SCREENSHOT_PATH"
+if maim -s "$SCREENSHOT_PATH"; then
+	notify-send "  Screenshot saved to: $SCREENSHOT_PATH"
+else
+	notify-send "  Screenshot canceled"
+fi
