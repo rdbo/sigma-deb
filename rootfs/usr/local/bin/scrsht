@@ -1,2 +1,4 @@
 mkdir -p "$HOME/Pictures"
-maim -s "$HOME/Pictures/$(date +%Y-%m-%d_%H-%M-%S).png"
+SCREENSHOT_PATH="$HOME/Pictures/$(date +%Y-%m-%d_%H-%M-%S).png"
+maim -s "$SCREENSHOT_PATH"
+notify-send "  Screenshot saved to: $SCREENSHOT_PATH"
