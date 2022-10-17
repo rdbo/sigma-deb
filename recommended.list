@@ -1,0 +1,90 @@
+# X11
+xinit
+xrandr
+dunst
+libnotify-bin
+feh
+vim
+maim
+papirus-icon-theme
+adwaita-icon-theme
+x11-xkb-utils
+x11-xserver-utils
+x11-utils
+
+# System Administration
+man
+fakeroot
+ssh
+rsync
+screen
+curl
+perl
+gawk
+sed
+coreutils
+wget
+openssl
+gnupg
+tar
+gzip
+xz-utils
+p7zip-full
+p7zip-rar
+ntfs-3g
+
+# Audio
+pulseaudio
+pulseaudio-utils
+pulsemixer
+
+# Development
+git
+g++
+make
+cmake
+build-essentials
+checkinstall
+live-build
+python3
+python3-pip
+openjdk-11-jdk
+openjdk-17-jdk
+
+# Network
+iwd
+wireguard-tools
+openvpn
+tor
+
+# Bluetooth
+bluez
+bluez-tools
+
+# Services
+apache2
+libapache2-mod-php
+postgresql
+mariadb-server
+mariadb-client
+
+# User software
+firefox-esr
+gimp
+inkscape
+libreoffice-gnome
+torbrowser-launcher
+weechat
+lxappearance
+poppler-utils
+imagemagick
+mpv
+keepassxc
+shotcut
+chromium
+qemu-system
+ovmf
+blender
+obs-studio
+audacity
+xfe
