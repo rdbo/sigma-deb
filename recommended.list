@@ -32,6 +32,7 @@ xz-utils
 p7zip-full
 p7zip-rar
 ntfs-3g
+cfdisk
 
 # Audio
 pulseaudio
@@ -88,3 +89,7 @@ blender
 obs-studio
 audacity
 xfe
+groff
+zathura
+xarchiver
+nsxiv
