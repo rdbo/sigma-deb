@@ -33,6 +33,7 @@ p7zip-full
 p7zip-rar
 ntfs-3g
 cfdisk
+btop
 
 # Audio
 pulseaudio
@@ -65,6 +66,7 @@ bluez-tools
 # Services
 apache2
 libapache2-mod-php
+php
 postgresql
 mariadb-server
 mariadb-client
@@ -93,3 +95,14 @@ groff
 zathura
 xarchiver
 nsxiv
+godot3
+yt-dlp
+thunderbird
+
+# Games
+openarena
+openarena-server
+supertux
+minetest
+minetest-server
+supertuxkart
