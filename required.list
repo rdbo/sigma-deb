@@ -2,13 +2,9 @@
 libx11-dev
 libxft-dev
 libxinerama-dev
-
-
-
-libxrandr-dev # xrandr library
+libxrandr-dev
 libimlib2-dev
 libharfbuzz-dev
-
 libfreetype-dev
 libxtst-dev
 gcc
