@@ -11,7 +11,6 @@ read_list() {
 }
 
 required="$(read_list required.list)"
-recommended="$(read_list recommended.list)"
 
 rm -rf bin deb
 mkdir -p bin deb
@@ -31,7 +30,6 @@ fakeroot checkinstall \
     --pkggroup "checkinstall" \
     --pkgsource="sigma+linux-$VERSION" \
     --requires="$required" \
-    --recommends="$recommended" \
     --provides="sigma-linux"
 
 mv *.deb "$ROOTDIR"/bin
