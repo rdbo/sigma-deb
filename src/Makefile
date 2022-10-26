@@ -19,7 +19,7 @@ svkbd:
 	make -C svkbd
 
 install: all
-	mkdir -p /usr/share/backgrounds /usr/local/bin /usr/local/src/sigma-deb /usr/local/share/man/man1
+	mkdir -p /usr/local/bin /usr/local/src/sigma-deb /usr/local/share/man/man1
 	make -C dwm install
 	make -C dwmblocks-async install
 	make -C dmenu install
@@ -28,7 +28,6 @@ install: all
 	make -C svkbd install
 	install -m 0644 sigma-linux.1 /usr/local/share/man/man1/
 	install -m 0755 dwmblocks-async/scripts/* /usr/local/bin/
-	cp -rf rootfs/. /
 	tar -hcJf /usr/local/src/sigma-deb/sigma-deb.tar.xz .
 
 clean:
@@ -46,8 +45,6 @@ uninstall:
 	make -C st uninstall
 	make -C slock uninstall
 	make -C svkbd uninstall
-	rm /usr/share/backgrounds/wallpaper* # be careful with this line
-	rm -rf /usr/local/src/dev
-	find rootfs -exec rm -rf /{} \;
+	rm -rf /usr/local/src/sigma-deb
 
 .PHONY: all dwm dwmblocks dmenu st slock svkbd install clean uninstall
